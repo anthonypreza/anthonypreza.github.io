@@ -2,16 +2,19 @@
   {
     "title": "Video-Text Search",
     "url": "https://github.com/anthonypreza/video-text-search",
-    "description": "Video-text retrieval with ResNet50, BERT, and contrastive learning."
+    "description": "I explored retrieving video clips with natural-language queries by learning a shared space for video and text. The system pairs ResNet50 and BERT with contrastive learning, with ONNX export and a Rust API backed by Weaviate.",
+    "slug": "video-text-search"
   },
   {
     "title": "Ghostwriter",
     "url": "https://github.com/anthonypreza/ghostwriter",
-    "description": "Language modeling and song embeddings in PyTorch."
+    "description": "I compared recurrent models, including LSTMs, with causal Transformers on next-token prediction in PyTorch. I also explored contrastive song embeddings and built a local playground to inspect how prompts and sampling settings affect generation.",
+    "slug": "ghostwriter"
   },
   {
     "title": "ML projects",
     "url": "https://github.com/anthonypreza/ml-systems",
-    "description": "A collection of smaller machine learning experiments."
+    "description": "Smaller experiments covering sentiment classification, recommendations, click-through rate prediction, and feature pipelines. These projects explore how model choices, evaluation, and the surrounding data systems fit together.",
+    "slug": "ml-projects"
   }
 ]

@@ -1,0 +1,16 @@
+---
+import Layout from './Layout.astro';
+const { title, description, status, repository } = Astro.props.frontmatter;
+---
+<Layout title={`${title} — Anthony Preza`} description={description}>
+  <div class="writeup">
+    <a class="back-link" href={import.meta.env.BASE_URL}>Home</a>
+    <header>
+      <h1>{title}</h1>
+      <p class="introduction">{description}</p>
+      <p class="status">{status}</p>
+      {repository && <p class="repository"><a href={repository}>GitHub repository</a></p>}
+    </header>
+    <div class="prose"><slot /></div>
+  </div>
+</Layout>

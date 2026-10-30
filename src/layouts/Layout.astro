@@ -1,16 +1,16 @@
 ---
 import '../styles/global.css';
-const description = 'Anthony Preza. Senior data engineer at Netflix. Personal machine learning projects.';
-const canonical = Astro.site ? new URL(import.meta.env.BASE_URL, Astro.site) : undefined;
+const { title = 'Anthony Preza', description = 'Anthony Preza. Senior data engineer at Netflix. Personal machine learning projects.' } = Astro.props;
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : undefined;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Anthony Preza</title>
+    <title>{title}</title>
     <meta name="description" content={description} />
-    <meta property="og:title" content="Anthony Preza" />
+    <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     {canonical && <link rel="canonical" href={canonical} />}

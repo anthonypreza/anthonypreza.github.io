@@ -1,6 +1,6 @@
 # Anthony Preza
 
-A single-page portfolio built with Astro.
+A minimal portfolio with project writeups, built with Astro.
 
 ## Local development
 
@@ -14,7 +14,12 @@ Open http://localhost:4321. Build with `npm run build`.
 ## Edit
 
 - `src/pages/index.astro`: introduction and page structure.
-- `src/data/projects.json`: project names, descriptions, and links.
+- `src/data/projects.json`: homepage project names, descriptions, and slugs.
+- `src/pages/projects/*.md`: writeup templates. HTML comments contain editing prompts
+  and do not appear on the rendered site.
+- `src/layouts/ProjectLayout.astro`: shared project-page layout.
+- `src/drafts/`: unpublished templates, including Memory Atlas. Files here are not
+  built as pages; move them into `src/pages/projects/` when ready.
 - `src/data/profile.json`: name and LinkedIn URL.
 - `src/styles/global.css`: styling.
 

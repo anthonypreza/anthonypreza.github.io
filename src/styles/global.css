@@ -25,3 +25,17 @@ footer { margin-top: 56px; color: #555; }
   main { margin: 56px auto; padding: 0 24px; }
   h1 { font-size: 30px; }
 }
+
+.status { margin-top: 7px; font-size: 14px; color: #666; }
+.back-link { display: inline-block; margin-bottom: 36px; color: #555; }
+.repository { margin-top: 18px; }
+.prose { margin-top: 44px; }
+.prose h2 { margin: 32px 0 10px; font-size: 20px; }
+.prose h3 { margin: 24px 0 8px; font-size: 18px; }
+.prose p + p { margin-top: 16px; }
+.prose ul { padding-left: 22px; color: #555; }
+.prose li + li { margin-top: 8px; }
+.prose img { max-width: 100%; height: auto; }
+.prose pre { overflow-x: auto; }
+
+footer nav { display: flex; gap: 24px; }
