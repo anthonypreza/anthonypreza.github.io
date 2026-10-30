@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Video-Text Search",
+    "url": "https://github.com/anthonypreza/video-text-search",
+    "description": "Video-text retrieval with ResNet50, BERT, and contrastive learning."
+  },
+  {
+    "title": "Ghostwriter",
+    "url": "https://github.com/anthonypreza/ghostwriter",
+    "description": "Language modeling and song embeddings in PyTorch."
+  },
+  {
+    "title": "ML projects",
+    "url": "https://github.com/anthonypreza/ml-systems",
+    "description": "A collection of smaller machine learning experiments."
+  }
+]
