@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="510" viewBox="0 0 640 510" role="img" aria-labelledby="title description"><title id="title">Ghostwriter contrastive song embeddings</title><desc id="description">Two non-overlapping excerpts from the same song pass through a shared frozen Transformer and mean pooling, followed by a trainable projection head. Contrastive loss treats same-song excerpts as positive pairs and other songs as negatives.</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#666"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;text-anchor:middle;fill:#222}.label{font-size:23px}.detail{font-size:18px;fill:#555}.heading{font-size:23px;font-weight:600}.box{fill:#fff;stroke:#aaa;stroke-width:1.5;rx:6}.flow{fill:none;stroke:#666;stroke-width:1.5;marker-end:url(#arrow)}</style></defs><rect width="640" height="510" fill="white"/>
+<text class="heading" x="320" y="32">Two excerpts from the same song</text>
+<rect class="box" x="32" y="58" width="256" height="54"/><text class="label" x="160" y="92">Excerpt A</text>
+<rect class="box" x="352" y="58" width="256" height="54"/><text class="label" x="480" y="92">Excerpt B</text>
+<path class="flow" d="M160 112V132H320V154"/><path d="M480 112V132H320" fill="none" stroke="#666" stroke-width="1.5"/>
+<rect class="box" x="120" y="154" width="400" height="80"/><text class="label" x="320" y="188">Shared frozen Transformer</text><text class="detail" x="320" y="215">Mean-pool valid token hidden states</text>
+<path class="flow" d="M320 234V274"/>
+<rect class="box" x="120" y="274" width="400" height="64"/><text class="label" x="320" y="313">Trainable projection head</text>
+<path class="flow" d="M320 338V378"/>
+<rect class="box" x="120" y="378" width="400" height="64"/><text class="label" x="320" y="417">Contrastive loss</text>
+<text class="detail" x="320" y="488">Positive: same song · Negatives: other songs</text></svg>

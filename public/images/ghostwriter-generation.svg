@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="490" viewBox="0 0 520 490" role="img" aria-labelledby="title description"><title id="title">Ghostwriter next-token prediction</title><desc id="description">Input tokens become embeddings, then pass through an RNN, LSTM, GRU, or causal Transformer. Hidden states project to vocabulary logits to predict the next token. Training uses cross-entropy.</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#666"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;text-anchor:middle;fill:#222}.label{font-size:23px}.detail{font-size:18px;fill:#555}.heading{font-size:23px;font-weight:600}.box{fill:#fff;stroke:#aaa;stroke-width:1.5;rx:6}.flow{fill:none;stroke:#666;stroke-width:1.5;marker-end:url(#arrow)}</style></defs><rect width="520" height="490" fill="white"/>
+<rect class="box" x="40" y="20" width="440" height="54"/><text class="label" x="260" y="54">Input tokens</text>
+<path class="flow" d="M260 74V104"/>
+<rect class="box" x="40" y="104" width="440" height="54"/><text class="label" x="260" y="138">Token embeddings</text>
+<path class="flow" d="M260 158V188"/>
+<rect class="box" x="40" y="188" width="440" height="76"/><text class="label" x="260" y="220">RNN / LSTM / GRU / Transformer</text><text class="detail" x="260" y="248">Hidden states at each token position</text>
+<path class="flow" d="M260 264V294"/>
+<rect class="box" x="40" y="294" width="440" height="54"/><text class="label" x="260" y="328">Linear layer → vocabulary logits</text>
+<path class="flow" d="M260 348V378"/>
+<rect class="box" x="40" y="378" width="440" height="54"/><text class="label" x="260" y="412">Predict the next token</text>
+<text class="detail" x="260" y="473">Training: cross-entropy against the actual next token</text></svg>

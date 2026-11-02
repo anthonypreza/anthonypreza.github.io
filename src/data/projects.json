@@ -2,19 +2,19 @@
   {
     "title": "Video-Text Search",
     "url": "https://github.com/anthonypreza/video-text-search",
-    "description": "I explored retrieving video clips with natural-language queries by learning a shared space for video and text. The system pairs ResNet50 and BERT with contrastive learning, with ONNX export and a Rust API backed by Weaviate.",
+    "description": "I've been really interested in contrastive learning and multimodal embeddings, so I explored building a two-tower retrieval model that can search videos using natural language. It does this by learning a shared embedding space for video and text. The model encodes video frames with ResNet50 and then encodes captions with BERT. It then projects the encoded videos and captions into the same embedding dimension and learns to place text embeddings closer to the video embeddings that they represent. Search can then be done by embedding a query and finding the top-k most similar video embeddings. The project also includes ONNX export and a Rust API powered by a Weaviate vector database.",
     "slug": "video-text-search"
   },
   {
     "title": "Ghostwriter",
     "url": "https://github.com/anthonypreza/ghostwriter",
-    "description": "I compared recurrent models, including LSTMs, with causal Transformers on next-token prediction in PyTorch. I also explored contrastive song embeddings and built a local playground to inspect how prompts and sampling settings affect generation.",
+    "description": "Text generation is a common use case for modern LLMs, so I wanted to explore how different sequence models perform on this task. I modeled text generation as a next-token prediction problem in PyTorch and compared RNNs, LSTMs, GRUs, and causal transformers. I also built a UI playground that lets you inspect how prompts and sampling settings affect text generation. In phase 2 of this project, I explored learning song representations by using contrastive learning with positives modeled as sections within the same song and negatives as sections from other songs. The goal is to encode songs and then cluster similar song embeddings together.",
     "slug": "ghostwriter"
   },
   {
     "title": "ML projects",
     "url": "https://github.com/anthonypreza/ml-systems",
-    "description": "Smaller experiments covering sentiment classification, recommendations, click-through rate prediction, and feature pipelines. These projects explore how model choices, evaluation, and the surrounding data systems fit together.",
+    "description": "This is an earlier collection of ML explorations. The video-text-search project above grew out of this repository. The projects cover sentiment classification, recommendations, click-through rate prediction, and building real-time feature pipelines.",
     "slug": "ml-projects"
   }
 ]

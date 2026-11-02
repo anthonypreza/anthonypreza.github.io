@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="590" viewBox="0 0 640 590" role="img" aria-labelledby="title description"><title id="title">Video-Text Search architecture</title><desc id="description">Video frames pass through ResNet50 and projection, then mean pooling and L2 normalization. Captions pass through BERT and projection, then L2 normalization. Contrastive loss aligns the embeddings; search compares a query embedding with video embeddings.</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#666"/></marker><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;text-anchor:middle;fill:#222}.label{font-size:23px}.detail{font-size:18px;fill:#555}.heading{font-size:23px;font-weight:600}.box{fill:#fff;stroke:#aaa;stroke-width:1.5;rx:6}.flow{fill:none;stroke:#666;stroke-width:1.5;marker-end:url(#arrow)}</style></defs><rect width="640" height="590" fill="white"/>
+<text class="heading" x="160" y="34">Video</text><text class="heading" x="480" y="34">Text</text>
+<rect class="box" x="32" y="64" width="256" height="54"/><text class="label" x="160" y="98">Video frames</text>
+<rect class="box" x="352" y="64" width="256" height="54"/><text class="label" x="480" y="98">Captions</text>
+<path class="flow" d="M160 118V154"/><path class="flow" d="M480 118V154"/>
+<rect class="box" x="32" y="154" width="256" height="70"/><text class="label" x="160" y="185">ResNet50</text><text class="detail" x="160" y="210">+ projection per frame</text>
+<rect class="box" x="352" y="154" width="256" height="70"/><text class="label" x="480" y="185">BERT</text><text class="detail" x="480" y="210">+ projection</text>
+<path class="flow" d="M160 224V260"/><rect class="box" x="32" y="260" width="256" height="54"/><text class="label" x="160" y="294">Mean pooling</text>
+<path class="flow" d="M160 314V350"/><path class="flow" d="M480 224V350"/>
+<rect class="box" x="32" y="350" width="256" height="70"/><text class="label" x="160" y="381">Video embedding</text><text class="detail" x="160" y="406">L2 normalized</text>
+<rect class="box" x="352" y="350" width="256" height="70"/><text class="label" x="480" y="381">Text embeddings</text><text class="detail" x="480" y="406">L2 normalized</text>
+<path class="flow" d="M160 420V442H320V472"/><path d="M480 420V442H320" fill="none" stroke="#666" stroke-width="1.5"/>
+<rect class="box" x="80" y="472" width="480" height="70"/><text class="label" x="320" y="503">Contrastive loss</text><text class="detail" x="320" y="528">Similarity / temperature → cross-entropy</text>
+<text class="detail" x="320" y="576">Search: query → nearest video embeddings</text></svg>
