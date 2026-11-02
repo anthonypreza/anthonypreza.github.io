@@ -2,5 +2,10 @@
   "name": "Anthony Preza",
   "role": "Senior Data Engineer at Netflix",
   "github": "https://github.com/anthonypreza",
-  "linkedin": "https://www.linkedin.com/in/apreza/"
+  "linkedin": "https://www.linkedin.com/in/apreza/",
+  "music": {
+    "artist": "Finding René",
+    "title": "Stars Won't Align",
+    "url": "https://distrokid.com/hyperfollow/findingren/stars-wont-align?ref=release"
+  }
 }

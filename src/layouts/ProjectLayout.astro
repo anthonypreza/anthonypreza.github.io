@@ -9,7 +9,7 @@ const { title, description, status, repository } = Astro.props.frontmatter;
       <h1>{title}</h1>
       <p class="introduction">{description}</p>
       <p class="status">{status}</p>
-      {repository && <p class="repository"><a href={repository}>GitHub repository</a></p>}
+      {repository && <p class="repository"><a href={repository} target="_blank" rel="noopener noreferrer">GitHub repository</a></p>}
     </header>
     <div class="prose"><slot /></div>
   </div>
